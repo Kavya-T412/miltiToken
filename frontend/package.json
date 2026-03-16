@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "env-check": "node scripts/env-check.js",
-    "setup-env": "node scripts/setup-env.js"
+    "setup-env": "node scripts/setup-env.js",
+    "build-env": "node scripts/build-env.js"
   },
   "eslintConfig": {
     "extends": [

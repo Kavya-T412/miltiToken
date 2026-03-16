@@ -12,7 +12,7 @@ export const config = createConfig({
   connectors: [
     injected(),
     walletConnect({ 
-      projectId: process.env.REACT_APP_WALLETCONNECT_PROJECT_ID || '1' 
+      projectId: process.env.REACT_APP_WALLETCONNECT_PROJECT_ID || 'default'
     }),
   ],
   transports: {
