@@ -1,0 +1,142 @@
+.burn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.burn-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.burn-header h2 {
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+}
+
+.burn-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.burn-toggle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 200px;
+}
+
+.toggle-btn:hover {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.toggle-btn.active {
+  background: linear-gradient(135deg, #ff6b6b, rgba(255, 107, 107, 0.7));
+  border-color: #ff6b6b;
+  color: var(--text-primary);
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.3);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(255, 107, 107, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #ff6b6b;
+  font-size: 0.95rem;
+}
+
+.form-group small {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.info-box {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), rgba(76, 140, 228, 0.05));
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #ff9999;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.info-box h3 {
+  color: #ff9999;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-box li {
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.info-box li:before {
+  content: "⚠";
+  position: absolute;
+  left: 0;
+  color: #ff9999;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .burn-toggle {
+    flex-direction: column;
+  }
+
+  .toggle-btn {
+    max-width: 100%;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+}
