@@ -136,7 +136,7 @@ const Dashboard = () => {
     return (
       <div className="dashboard-container">
         <div className="empty-state">
-          <h2>📊 Connect Your Wallet</h2>
+          <h2>Connect Your Wallet</h2>
           <p>Please connect your wallet to view your created tokens</p>
         </div>
       </div>
@@ -157,13 +157,13 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-header">
-        <h2>📊 My NFT Dashboard</h2>
+        <h2>My NFT Dashboard</h2>
         <p>View and manage all tokens you've created</p>
       </div>
 
       {userTokens.length === 0 ? (
         <div className="empty-state">
-          <div className="empty-icon">🎨</div>
+
           <h3>No Tokens Created Yet</h3>
           <p>Start by minting your first token in the Mint Tokens section</p>
         </div>
@@ -173,7 +173,7 @@ const Dashboard = () => {
             <div className="search-box">
               <input
                 type="text"
-                placeholder="🔍 Search by Token ID, URI, or address..."
+                placeholder="Search by Token ID, URI, or address..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />

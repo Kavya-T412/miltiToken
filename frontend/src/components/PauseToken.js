@@ -132,7 +132,7 @@ const PauseToken = () => {
   return (
     <div className="pause-container">
       <div className="pause-header">
-        <h2>⏸️ Manage Token Pause Status</h2>
+        <h2>Manage Token Pause Status</h2>
         <p>Control individual token minting availability</p>
       </div>
 
@@ -170,7 +170,7 @@ const PauseToken = () => {
             <div className="status-item">
               <h3>Current Status</h3>
               <div className={`status-badge ${isPaused ? 'paused' : 'active'}`}>
-                {isPaused ? '⏸️ Paused' : '✅ Active'}
+                {isPaused ? 'Paused' : 'Active'}
               </div>
             </div>
 

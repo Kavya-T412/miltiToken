@@ -100,7 +100,7 @@ const BurnToken = () => {
   return (
     <div className="burn-container">
       <div className="burn-header">
-        <h2>🔥 Burn Tokens</h2>
+        <h2>Burn Tokens</h2>
         <p>Remove tokens from circulation</p>
       </div>
 

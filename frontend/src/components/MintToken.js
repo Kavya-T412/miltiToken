@@ -128,7 +128,7 @@ const MintToken = () => {
   return (
     <div className="mint-container">
       <div className="mint-header">
-        <h2>🔄 Mint New Tokens</h2>
+        <h2>Mint New Tokens</h2>
         <p>Create new tokens or mint existing ones</p>
       </div>
 
