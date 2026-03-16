@@ -100,7 +100,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>KavToken @ 2024 | Powered by Web3</p>
+        <p>KavToken @ 2026 | Powered by Web3</p>
       </footer>
     </div>
   );
